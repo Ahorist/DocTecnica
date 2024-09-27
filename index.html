@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación Técnica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Índice de Documentación</header>
+        <a class="nav-link" href="#Introducción">Introducción</a>
+        <a class="nav-link" href="#Instalación">Instalación</a>
+        <a class="nav-link" href="#Uso_Básico">Uso Básico</a>
+        <a class="nav-link" href="#Funciones_Avanzadas">Funciones Avanzadas</a>
+        <a class="nav-link" href="#Conclusión">Conclusión</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introducción" class="main-section">
+                <header class="titulos">Introducción</header>
+            </section>
+            <p>Bienvenido a la documentación técnica. Este documento te guiará a través de los conceptos básicos para poder lanzar tu primer "Hola Mundo" con JavaScript</p>
+            <p>El documento está dividido en varias secciones, cada una abordando un tema específico.</p>
+            <ul>
+                <li>Conceptos básicos</li>
+                <li>Instalación</li>
+                <li>Uso</li>
+            </ul>
+        </section>
+
+        <section id="Instalación" class="main-section">
+            <header class="titulos">Instalación</header>
+
+            <h2>Instalar VSCode</h2>
+            <p>Para instalar, sigue estos pasos:</p>
+            <ol>
+                <li> Ve al sitio web para descargar <a src="https://code.visualstudio.com/download">VSCode</a></li>
+                <li> Haz clic en el bóton "Descargar" para la versión correspondiente a tu sistema operativo (Windows, macOS o Linux)</li>
+                <li> Ejecuta el instalador y sigue las instrucciones para instalar VSCode</li>
+            </ol>
+
+            <h2>Instalar Node.js</h2>
+            <ol>
+                <li> Ve al sitio web de Node.js <a></a></li>
+                <li> Haz clic en el botón "Descargar" para la versión correspondiente a tu sistema operativo (Windows, macOS o Linux)</li>
+                <li> Ejecuta el instalador y sigue las instrucciones para instalar Node.js</li>
+                <li> Corroborar que Node.js este bien instalado de la siguiente forma:
+                &bull; Abre una terminal o línea de comandos en tu sistema operativo.
+                &bull; escribe el siguiente comando para verificar la versión de Node.js instalada:
+                </li>
+            </ol>
+            <code>node -v</code>
+            <p>
+                &bull; Presiona Enter. Deberías ver la versión de Node.js instalada, por ejemplo:
+            </p>
+            <code>v14.17.0</code>
+
+            <h2>Crea un Nuevo proyecto en VSCode</h2>
+            <ol>
+                <li> Abre VSCode</p>
+                <li> Haz clic en "Archivo">"Nuevo archivo" o presiona <code>Ctrl + N</code> (Windows/Linux) o <code>Cmd + N</code> (macOS)</li>
+                <li> Guarda el archivo con el nombre "hola_mundo.js"</li>
+            </ol>
+
+            <h2>Escribir el Código "Hola Mundo" en JavaScript</h2>
+            <ol>
+                <li> En el archivo "hola_mundo.js" escribe el siguiente código:</li>
+                <code>console.log("Hola Mundo");</code>
+                <li> Guarda el archivo</li>
+            </ol>
+                <h2>Ejecutar el Código</h2>
+            <ol>
+                <li> Abre una terminar en VSCode presionando <code>Ctrl + ñ</code></li>
+                <li> Escriba el siguiente comando para ejecutar el código:</li>
+                <code>node hola_mundo.js</code>
+                <li> Presiona Enter para ejecutar el comando</li>
+                <li> Felicidades ya podrias visualizar tu resultado. Logrando con exito tu primer "Hola Mundo" en JS y de esta forma comprobando que la instalación fue todo un exito.</li>
+            </ol>
+        </section>
+
+        <section id="Uso_Básico" class="main-section">
+            <header class="titulos">Uso Básico</header>
+            <h2>Variables</h2>
+            <p>&bull; Una variable es un contenedor que almacena un valor.</p>
+            <p>&bull; Se declara una variable utilizando la palabra clave <code>let</code> o <code>const</code>.</p>
+            <p>&bull; Ejemplo:<code>let nombre = 'Juan';</code></p>
+
+            <h2>Tipos de Datos</h2>
+            <p>&bull; <span>Números</span>: Representan valores numéricos, como <code>1</code> <code>2</code> <code>3</code>, etc.</p>
+            <p>&bull; <span>Cadenas</span>: Representan texto, como <code>'Hola Mundo'</code></p>
+            <p>&bull; <span>Booleanos</span>: Representan valores verdaderos o falsos, como <code>true</code> o <code>false</code>.</p>
+            <p>&bull; <span>Nulos</span>: Representan la ausencia de un valor, como <code>null</code>.</p>
+            <p>&bull; <span>Indefinidos</span>: Representan un valor que no ha sido asignado, como <code>undefined</code>.</p>
+
+            <h2>Operadores</h2>
+            <p>&bull; <span>Asignación</span>: <code>=</code>, asigna un valor a una variable. </p>
+            <p>&bull; <span>Suma</span>: <code>+</code>, suma dos valores. </p>
+            <p>&bull; <span>Resta</span>: <code>-</code>, resta un valor de otro. </p>
+            <p>&bull; <span>Multiplicación</span>: <code>*</code>, multiplica dos valores. </p>
+            <p>&bull; <span>División</span>: <code>/</code>, divide un valor entre otro. </p>
+
+            <ul>
+                <p>Ejemplos:</p>
+                <li><code>let edad = 25;</code></li>
+                <li><code>let resultado = 2 + 3;</code></li>
+                <li><code>let saludo = 'Hola ' + 'Mundo';</code></li>
+            </ul>
+
+        </section>
+
+        <section id="Funciones_Avanzadas" class="main-section">
+            <header class="titulos">Funciones Avanzadas</header>
+            <h2>Callbacks</h2>
+
+            <h3>¿Que son las Callbacks?</h3>
+            <p>Una <span>callback</span> es una función que se pasa como argumento a otro función, y se ejecuta cuando se completa una operación o se produce un evento específico. En otras palabras, una callback es una función que se llama "de vuelta" (de ahi el nombre) cuando se produce un evento o se completa una operación.</p>
+            
+            <h3>¿Cómo funcionan las callbacks?</h3>
+            <p>Aquí hay una explicación paso a paso de cómo funcionan las callbacks:</p>
+            <ol>
+                <li>Se define una función principal que realiza una operación o llama a otra función.</li>
+                <li>Se define una función de callback que se pasará como argumento a la función principal.</li>
+                <li>La función principal recibe la función de callback como argumento y la amacena en una variable.</li>
+                <li>Cuando se completa la operación o se produce el evento específico, la función principal llama a la función de callback.</li>
+                <li>La función de callback se ejecuta con los argumentos que se le pasan desde la función principal.</li>
+            </ol>
+
+            <h3>Características clave de las callbacks</h3>
+            <ul>
+                <li>Las callbacks se ejecutan de forma asíncrona, es decir, no bloquean el flujo de ejecucón del programa.</li>
+                <li>Las callbacks pueden recibir argumentos desde la función principal.</li>
+                <li>Las callbacks pueden retornar valores a la función principal.</li>
+            </ul>
+
+            <h3>Ventajas de las callbacks</h3>
+            <ul>
+                <li>Permiten manejar operaciones asíncronas de manera efectiva</li>
+                <li>Permiten separar la lógica de la función principal de la lógica de la función de callback.</li>
+                <li>Son útiles para manejar errores y excepciones.</li>
+            </ul>
+
+            <h3>Ejemplo de Callback</h3>
+            <code>
+                function suma(a, b, callback){
+                let resultado = a + b;
+                callback(resultado);
+                }
+            </code>
+            <code>
+                suma(2, 3, function(resultado){
+                    console.log(resultado); //imprime 5
+                });
+            </code>
+            <p>En este ejemplo, la función <code>suma</code> toma tres argumentos:<code>a</code>, <code>b</code> y <code>callback</code>. La función <code>suma</code> realiza la operación de suma y luego llama a la función <code>callback</code> pasando el resultado como argumento.</p>
+            <p>La función <code>callback</code> es una función anónima que se define en el momento de llamar a la función <code>suma</code>. Esta función toma un argumento <code>resultado</code> y lo imprime en la consola.</p>
+        </section>
+
+        <section id="Conclusión" class="main-section">
+            <header class="titulos">Conclusión</header>
+            <p>Hemos explorado los fundamentos de Node.js y JavaScript, desde la instalación de Node.js y VSCode hasta la creación de un primer programa 'Hola Mundo'.</p>
+            <p>Hemos aprendido sobre variables, tipos de datos y operadores en JavaScript, y hemos visto cómo utilizar callbacks para manejar operaciones asíncronas en Node.js.</p>
+            <p>Con estos conocimientos, estás listo para seguir aprendiendo y explorando más a fondo el mundo de Node.js y JavaScript. Recuerda que la práctica es la mejor manera de aprender, así que sigue experimentando y mejorando tus habilidades, ¡Buena suerte en tu camino como desarrollador!.</p>
+        </section>
+    </main>
+</body>
+</html>
